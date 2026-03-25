@@ -25,13 +25,13 @@ entry:
 !llvm.ident = !{!6}
 !repo.definitions = !{!7, !8}
 
-!0 = distinct !DICompileUnit(language: DW_LANG_C99, file: !1, producer: "clang version 8.0.0 (https://github.com/SNSystems/clang-prepo.git e1264723eba24003590821b53c60d5268c928acb) (https://github.com/SNSystems/llvm-prepo.git 5a4ad96b98b02594566d6d1506d75bd760322d15)", isOptimized: false, runtimeVersion: 0, emissionKind: FullDebug, enums: !2)
+!0 = distinct !DICompileUnit(language: DW_LANG_C99, file: !1, producer: "clang version 8.0.0 (https://github.com/sonyinteractive/sn-clang-prepo.git e1264723eba24003590821b53c60d5268c928acb) (https://github.com/sonyinteractive/sn-llvm-project-prepo.git 5a4ad96b98b02594566d6d1506d75bd760322d15)", isOptimized: false, runtimeVersion: 0, emissionKind: FullDebug, enums: !2)
 !1 = !DIFile(filename: "test.c", directory: "C:\5CMyWork\5Crepo_bug\5Cbug49")
 !2 = !{}
 !3 = !{i32 2, !"Dwarf Version", i32 4}
 !4 = !{i32 2, !"Debug Info Version", i32 3}
 !5 = !{i32 1, !"wchar_size", i32 4}
-!6 = !{!"clang version 8.0.0 (https://github.com/SNSystems/clang-prepo.git e1264723eba24003590821b53c60d5268c928acb) (https://github.com/SNSystems/llvm-prepo.git 5a4ad96b98b02594566d6d1506d75bd760322d15)"}
+!6 = !{!"clang version 8.0.0 (https://github.com/sonyinteractive/sn-clang-prepo.git e1264723eba24003590821b53c60d5268c928acb) (https://github.com/sonyinteractive/sn-llvm-project-prepo.git 5a4ad96b98b02594566d6d1506d75bd760322d15)"}
 !7 = !RepoDefinition(name: "ultimate_answer", digest: [16 x i8] c"\A9'\00\E6\97nq\C0\BC?\B8\B6,\D6!\CA", linkage: external, visibility: default, pruned: false)
 !8 = !RepoDefinition(name: "main", digest: [16 x i8] c"7|\F2o%\82\DB\045\FDx\FF\C4E\EC\D2", linkage: external, visibility: default, pruned: false)
 !9 = distinct !DISubprogram(name: "ultimate_answer", scope: !1, file: !1, line: 1, type: !10, isLocal: false, isDefinition: true, scopeLine: 1, isOptimized: false, unit: !0, retainedNodes: !2)

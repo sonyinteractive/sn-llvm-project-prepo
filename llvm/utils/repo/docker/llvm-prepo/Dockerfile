@@ -97,7 +97,7 @@ ARG musl_install_dir=$install_dir/musl
 ARG musl_workspace=$workspace_dir/musl
 
 RUN git clone --depth 1 --single-branch --progress \
-  https://github.com/SNSystems/musl-prepo          \
+  https://github.com/sonyinteractive/sn-musl-prepo          \
   $musl_workspace
 ENV CC=$install_dir/bin/clang
 ENV PATH=$install_dir/bin:$PATH

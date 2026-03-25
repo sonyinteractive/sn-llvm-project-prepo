@@ -25,7 +25,7 @@ jobs:
     - name: Checkout pstore
       uses: actions/checkout@v2
       with:
-        repository: SNSystems/pstore
+        repository: sonyinteractive/sn-pstore
         path: pstore
     - name: Test LLVM
       uses: llvm/actions/build-test-llvm-project@main

@@ -4,7 +4,7 @@ A utility which automatically tests the built llvm-prepo toolchain using the pst
 
 Automatically build and run toolchain and pstore tests includes:
 
-1. Clone or update the [llvm-project-prepo](https://github.com/SNSystems/llvm-project-prepo) and [pstore](https://github.com/SNSystems/pstore) projects.
+1. Clone or update the [llvm-project-prepo](https://github.com/sonyinteractive/sn-llvm-project-prepo) and [pstore](https://github.com/sonyinteractive/sn-pstore) projects.
 2. Build the llvm-project-prepo toolchain with either Debug or Release configuration.
 3. Generate a pstore build with either Debug or Release configuration.
 4. For each pstore unit test target except pstore-broker-unit-tests:
@@ -37,6 +37,6 @@ The utility uses some third-party Python libraries which must be installed befor
 
 With the working directory, run the script with the default options to produce a pstore test result Markdown file (pstore_test_results.md).
 
-The test results (named pstore_test_results.md) can be used to update the Wiki page “[Test Results for pstore Unit and System Tests](https://github.com/SNSystems/llvm-prepo/wiki/Test-Results-for-pstore-Unit-and-System-Tests)”.
+The test results (named pstore_test_results.md) can be used to update the Wiki page “[Test Results for pstore Unit and System Tests](https://github.com/sonyinteractive/sn-llvm-project-prepo/wiki/Test-Results-for-pstore-Unit-and-System-Tests)”.
 
 On success, the exit code is 0 and 1 if there are any errors.

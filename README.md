@@ -1,6 +1,6 @@
 # LLVM with Program Repository Support
 
-[![Commit Tests](https://github.com/SNSystems/llvm-project-prepo/workflows/Commit%20Tests/badge.svg)](https://github.com/SNSystems/llvm-project-prepo/actions?query=workflow%3A%22Commit+Tests%22)
+[![Commit Tests](https://github.com/sonyinteractive/sn-llvm-project-prepo/workflows/Commit%20Tests/badge.svg)](https://github.com/sonyinteractive/sn-llvm-project-prepo/actions?query=workflow%3A%22Commit+Tests%22)
 
 This git repository contains a copy of LLVM (forked from [llvm/llvm-project@`7b556541`](https://github.com/llvm/llvm-project/commit/7b5565418f4d6e113ba805dad40d471d23bca6f6) with work-in-progress modifications to output to a Program Repository.
 
@@ -8,25 +8,25 @@ The changes are to add support for the program repository that was first shown a
 
 This implementation was the subject of a lightning talk at [2019 Euro LLVM Developers' meeting](https://llvm.org/devmtg/2019-04/), also [available on YouTube](https://youtu.be/mlQyEBDnDJE). 
 
-The Program Repository and ccache together can achieve [still faster builds](https://github.com/SNSystems/llvm-project-prepo/wiki/Compile-Faster-with-the-Program-Repository-and-ccache). Data was presented in the [2020 Virtual LLVM Developers' meeting](https://llvm.org/devmtg/2020-09/) and is [available on YouTube](https://www.youtube.com/watch?v=nxfew3hsMFM). 
+The Program Repository and ccache together can achieve [still faster builds](https://github.com/sonyinteractive/sn-llvm-project-prepo/wiki/Compile-Faster-with-the-Program-Repository-and-ccache). Data was presented in the [2020 Virtual LLVM Developers' meeting](https://llvm.org/devmtg/2020-09/) and is [available on YouTube](https://www.youtube.com/watch?v=nxfew3hsMFM).
 
-Further documentation can be found on the [project wiki](https://github.com/SNSystems/llvm-project-prepo/wiki).
+Further documentation can be found on the [project wiki](https://github.com/sonyinteractive/sn-llvm-project-prepo/wiki).
 
 ## Building the Compiler
 
-The process to follow is similar to that for a conventional build of Clang+LLVM, but with an extra step to get the [pstore](https://github.com/SNSystems/pstore) back-end.
+The process to follow is similar to that for a conventional build of Clang+LLVM, but with an extra step to get the [pstore](https://github.com/sonyinteractive/sn-pstore) back-end.
 
-1. Clone [llvm-project-prepo](https://github.com/SNSystems/llvm-project-prepo.git) (this repository):
+1. Clone [llvm-project-prepo](https://github.com/sonyinteractive/sn-llvm-project-prepo.git) (this repository):
 
     ~~~bash
-    git clone https://github.com/SNSystems/llvm-project-prepo.git
+    git clone https://github.com/sonyinteractive/sn-llvm-project-prepo.git
     ~~~
 
-1. Clone [pstore](https://github.com/SNSystems/pstore):
+1. Clone [pstore](https://github.com/sonyinteractive/sn-pstore):
 
     ~~~bash
     cd llvm-project-prepo
-    git clone https://github.com/SNSystems/pstore.git
+    git clone https://github.com/sonyinteractive/sn-pstore.git
     cd -
     ~~~
 
@@ -57,7 +57,7 @@ Furthermore, the path to the program-repository database itself is set using an 
 The command-line above will write the object code for `test.c` to the program-repository and emit a “ticket file” `test.o`. This tiny file contains a key to the real data in the database.
 
 ### Linking
-A program-repository aware linker is very much on the project’s [“TODO” list](wiki/Limitations#missing-features). Until that happens, there's a `repo2obj` tool in the project tree. This generates a traditional ELF file from a repository ticket file. Using it is simple:
+A program-repository aware linker is very much on the project’s [“TODO” list](https://github.com/sonyinteractive/sn-llvm-project-prepo/wiki/Limitations#missing-features). Until that happens, there's a `repo2obj` tool in the project tree. This generates a traditional ELF file from a repository ticket file. Using it is simple:
 
 ~~~bash
 clang -target x86_64-pc-linux-gnu-repo -c -o test.o test.c

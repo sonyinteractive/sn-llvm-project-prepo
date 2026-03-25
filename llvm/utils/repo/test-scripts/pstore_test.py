@@ -179,15 +179,15 @@ class TestPstore(object):
                                       ["remote_url", "local_branch"])
         repository = {}
         repository['llvm-prepo'] = repo(
-            'https://github.com/SNSystems/llvm-prepo.git',
+            'https://github.com/sonyinteractive/sn-llvm-project-prepo.git',
             os.path.abspath(self._options.llvm_source_directory))
         repository['clang-prepo'] = repo(
-            'https://github.com/SNSystems/clang-prepo.git',
+            'https://github.com/sonyinteractive/sn-clang-prepo.git',
             os.path.abspath(
                 os.path.join(self._options.llvm_source_directory,
                              'tools/clang')))
         repository['pstore'] = repo(
-            'https://github.com/SNSystems/pstore.git',
+            'https://github.com/sonyinteractive/sn-pstore.git',
             os.path.abspath(
                 os.path.join(self._options.llvm_source_directory,
                              'tools/pstore')))

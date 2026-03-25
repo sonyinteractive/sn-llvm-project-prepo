@@ -99,9 +99,9 @@ if [ "$LOCAL_REPOSITORY" == "" ]; then
   echo "Checking out sources from git into '$WORKSPACE_DIR'"
   mkdir -p $WORKSPACE_DIR
 
-  GIT_REPOSITORY="https://github.com/SNSystems"
-  LLVM_PROJECT="llvm-project-prepo.git"
-  PSTORE_PROJECT="pstore.git"
+  GIT_REPOSITORY="https://github.com/sonyinteractive"
+  LLVM_PROJECT="sn-llvm-project-prepo.git"
+  PSTORE_PROJECT="sn-pstore.git"
 
   cd $WORKSPACE_DIR
   clone_project $LLVM_PROJECT $WORKSPACE_DIR src
