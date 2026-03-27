@@ -4,7 +4,7 @@
 
 This git repository contains a copy of LLVM (forked from [llvm/llvm-project@`7b556541`](https://github.com/llvm/llvm-project/commit/7b5565418f4d6e113ba805dad40d471d23bca6f6) with work-in-progress modifications to output to a Program Repository.
 
-The changes are to add support for the program repository that was first shown at the [2016 US LLVM Developers’ meeting](https://llvm.org/devmtg/2016-11/) in the talk catchily titled “Demo of a repository for statically compiled programs”. You can relive the highs and lows by [watching it on YouTube](https://youtu.be/-pL94rqyQ6c). The early implementation demonstrated there has its [own Github repository](https://github.com/SNSystems/Toy-tools). This repository implements the same thing in LLVM to give you the anticipated build-time improvements in a C++ compiler targeting Linux. 
+The changes are to add support for the program repository that was first shown at the [2016 US LLVM Developers’ meeting](https://llvm.org/devmtg/2016-11/) in the talk catchily titled “Demo of a repository for statically compiled programs”. You can relive the highs and lows by [watching it on YouTube](https://youtu.be/-pL94rqyQ6c). This repository implements the same thing in LLVM to give you the anticipated build-time improvements in a C++ compiler targeting Linux. 
 
 This implementation was the subject of a lightning talk at [2019 Euro LLVM Developers' meeting](https://llvm.org/devmtg/2019-04/), also [available on YouTube](https://youtu.be/mlQyEBDnDJE). 
 
